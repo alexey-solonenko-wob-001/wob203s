@@ -1,4 +1,4 @@
-import NavItem from '../../dataStructs/NavItem.js';
+class NavItem{};
 let ni = new NavItem();
 
 const testimonials = (() => {

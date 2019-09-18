@@ -4,6 +4,7 @@ import filename from './src/filename.cjs';
 import test_ecma_module from './src/test_ecma_module.js';
 import express from 'express';
 import { paths } from './src/mocks/paths/paths.js';
+import { routes } from './src/mocks/routes/routes.js';
 import viewParams from './src/mocks/viewParams/viewParams.js';
 const app = express();
 const port = process.env.port || 3001;
@@ -82,6 +83,13 @@ console.log('from index.mjs');
 app.get('/fetch_paths',(req, res) => {
     console.log('fetching paths');
     res.send(JSON.stringify({payload:{data:paths}}));
+    res.end();
+});
+
+let allowedRoutes = routes;
+app.get('/fetch_routes',(req, res) => {
+    console.log('fetching routes');
+    res.send(JSON.stringify({payload:{data:allowedRoutes}}));
     res.end();
 });
 
