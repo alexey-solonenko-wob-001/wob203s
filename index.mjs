@@ -34,7 +34,7 @@ app.get('/for', (req, res) => {
 
 
 const asyncToHandler = async () => {
-    
+
 
     const forHandler = () => new Promise((resolve, reject) => {
         const genFactory = function* () {
@@ -43,7 +43,7 @@ const asyncToHandler = async () => {
                 yield i;
             }
         }
-    
+
         const gen = genFactory();
         const promiseHandler = () => {
             let i = gen.next().value;
@@ -67,7 +67,7 @@ app.get('/to', async (req, res) => {
     console.log(asyncToHandler);
     await asyncToHandler();
     console.log('request processed');
-    
+
     res.send('Long processing of to completed ');
 
 }
@@ -80,26 +80,30 @@ app.get('/', (req, res) => {
 );
 console.log('from index.mjs');
 
-app.get('/fetch_paths',(req, res) => {
+app.get('/fetch_paths', (req, res) => {
     console.log('fetching paths');
-    res.send(JSON.stringify({payload:{data:paths}}));
+    res.send(JSON.stringify({ payload: { data: paths } }));
     res.end();
 });
 
-let allowedRoutes = routes;
-app.get('/fetch_routes',(req, res) => {
+app.get('/fetch_routes', (req, res) => {
     console.log('fetching routes');
-    res.send(JSON.stringify({payload:{data:allowedRoutes}}));
+    /** 
+     * @typedef import('../../typedefs/navTypeDefs.js').wob203rRoutes 
+     */
+    let allowedRoutes = routes;
+
+    res.send(JSON.stringify({ payload: { data: allowedRoutes } }));
     res.end();
 });
 
-app.get('/fetch_view_params',(req, res) => {
+app.get('/fetch_view_params', (req, res) => {
     console.log('fetching view params');
-    res.send(JSON.stringify({payload:{data:viewParams}}));
+    res.send(JSON.stringify({ payload: { data: viewParams } }));
     res.end();
 });
 
-app.listen(port, () => console.log('Express  listening on '+port));
+app.listen(port, () => console.log('Express  listening on ' + port));
 //const http = require('http');
 //const path = require('path');
 

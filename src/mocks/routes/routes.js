@@ -149,7 +149,7 @@ let routes = {
             },
             teachers: {
                 selfNav: {
-                    path: '/courses-teachers',
+                    path: '/courses/teachers',
                     name: 'teachers',
                     order: 35,
                     intl: 'На преподавателя'
