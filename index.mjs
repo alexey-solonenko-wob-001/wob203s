@@ -1,6 +1,7 @@
 import path from 'path';
 import http from 'http';
 import filename from './src/filename.cjs';
+import { logger } from './dev/logger_w.mjs';
 import test_ecma_module from './src/test_ecma_module.js';
 import express from 'express';
 import { paths } from './src/mocks/paths/paths.js';
@@ -75,10 +76,11 @@ app.get('/to', async (req, res) => {
 
 app.get('/', (req, res) => {
 
-    res.send('Hello world from express');
+    res.send('Hello world from express 2');
 }
 );
 console.log('from index.mjs');
+logger.info('test from index.mjs');
 
 app.get('/fetch_paths', (req, res) => {
     console.log('fetching paths');

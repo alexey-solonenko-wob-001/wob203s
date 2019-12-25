@@ -2,9 +2,9 @@
  * @typedef import('../../typedefs/routes.js').wob203rRoutes
  */
 
- /**
- * @type routeItem
- */
+/**
+* @type routeItem
+*/
 let testimonials = {
     path: '/testimonials',
     name: 'testimonials',
@@ -102,32 +102,74 @@ let routes = {
                     order: 15,
                     intl: 'Бизнес'
                 },
-                trades: {
-                    selfNav: {
-                        path: '/courses/business/trades',
-                        name: 'trades',
-                        order: 5,
-                        intl: 'По профессиям'
-                    },
-                    accountant: {
-                        path: '/courses/business/trades/accountant',
-                        name: 'accountant',
-                        order: 10,
-                        intl: 'Бухгалтер'
-                    },
-                    manager: {
-                        path: '/courses/business/trades/manager',
-                        name: 'manager',
-                        order: 15,
-                        intl: 'Руководитель'
-                    }
-                }
+                general: {
+                    path: '/courses/business/general',
+                    name: 'general',
+                    order: 10,
+                    intl: 'Общие'
+                },
+                intensive: {
+                    path: '/courses/business/intensive',
+                    name: 'intensive',
+                    order: 20,
+                    intl: 'Интесивные'
+                },
+                target: {
+                    path: '/courses/business/target',
+                    name: 'target',
+                    order: 30,
+                    intl: 'Целевые'
+                },
+                // trades: {
+                //     selfNav: {
+                //         path: '/courses/business/trades',
+                //         name: 'trades',
+                //         order: 5,
+                //         intl: 'По профессиям'
+                //     },
+                //     accountant: {
+                //         path: '/courses/business/trades/accountant',
+                //         name: 'accountant',
+                //         order: 10,
+                //         intl: 'Бухгалтер'
+                //     },
+                //     manager: {
+                //         path: '/courses/business/trades/manager',
+                //         name: 'manager',
+                //         order: 15,
+                //         intl: 'Руководитель'
+                //     }
+                // }
             },
             family: {
                 selfNav: {
                     path: '/courses/family',
                     name: 'family',
                     order: 20,
+                    intl: 'Для всей семьи'
+                },
+                teenagers: {
+                    path: '/courses/family/teenagers',
+                    name: 'teenagers',
+                    order: 10,
+                    intl: 'Подростки'
+                },
+                summerCamp: {
+                    path: '/courses/family/summer-camp',
+                    name: 'summerCamp',
+                    order: 20,
+                    intl: 'Летний лагерь'
+                },
+                kids: {
+                    path: '/courses/family/kids',
+                    name: 'kids',
+                    order: 30,
+                    intl: 'Дети и малыши'
+                },
+                fullFamily: {
+                    path: '/courses/family/full-family',
+                    name: 'fullFamily',
+                    order: 40,
                     intl: 'Для всей семьи'
                 }
             },
@@ -156,7 +198,7 @@ let routes = {
                 }
             },
         },
-        accommodation :{ 
+        accommodation: {
             selfNav: {
                 path: '/accommodation',
                 name: 'accommodation',

@@ -28,12 +28,19 @@
  * @property {routeItem} mainTree.courses.business.trades.selfNav
  * @property {routeItem} mainTree.courses.business.trades.manager
  * @property {routeItem} mainTree.courses.business.trades.accountant
+ * @property {routeItem} mainTree.courses.business.general
+ * @property {routeItem} mainTree.courses.business.intensive
+ * @property {routeItem} mainTree.courses.business.target
  * @property {Object} mainTree.courses.testimonials
  * @property {routeItem} mainTree.courses.testimonials.selfNav
  * @property {Object} mainTree.courses.longTerm
  * @property {routeItem} mainTree.courses.longTerm.selfNav
  * @property {Object} mainTree.courses.family
  * @property {routeItem} mainTree.courses.family.selfNav
+ * @property {routeItem} mainTree.courses.family.teenagers
+ * @property {routeItem} mainTree.courses.family.summerCamp
+ * @property {routeItem} mainTree.courses.family.kids
+ * @property {routeItem} mainTree.courses.family.fullFamily
  * @property {Object} mainTree.courses.certs
  * @property {routeItem} mainTree.courses.certs.selfNav
  * @property {Object} mainTree.courses.teachers

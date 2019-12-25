@@ -1,0 +1,111 @@
+info: test {"service":"user-service"}
+info: test {"service":"user-service"}
+info: test {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: 2 {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: 2 {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info:  {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: TypeError: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator)) {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator)) {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator)) {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: TypeError: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: TypeError: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Found non-callable @@iterator {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: object is not iterable (cannot read property Symbol(Symbol.iterator)) {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Assignment to constant variable. {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Assignment to constant variable. {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: consele is not defined {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: consele is not defined {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Assignment to constant variable. {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Assignment to constant variable. {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Assignment to constant variable. {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Assignment to constant variable. {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Assignment to constant variable. {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: Assignment to constant variable. {"service":"user-service"}
+info: test {"service":"user-service"}
+info: 1 {"service":"user-service"}
+info: test {"service":"user-service"}
+info: test from index.mjs {"service":"user-service"}
+info: test from index.mjs {"service":"user-service"}
+info: Could not create file. {"code":553,"service":"user-service"}
+info: test from index.mjs {"service":"user-service"}
