@@ -1,5 +1,6 @@
 import path from 'path';
 import http from 'http';
+import cors from 'cors';
 import filename from './src/filename.cjs';
 import { logger } from './dev/logger_w.mjs';
 import test_ecma_module from './src/test_ecma_module.js';
@@ -7,8 +8,11 @@ import express from 'express';
 import { paths } from './src/mocks/paths/paths.js';
 import { routes } from './src/mocks/routes/routes.js';
 import viewParams from './src/mocks/viewParams/viewParams.js';
+
+import { loginRouteHanlder } from './src/routeHandlers/login.js';
 const app = express();
 const port = process.env.port || 3001;
+/** TODO to delete and clean-up testing part  */
 //port =  3001;
 app.get('/for', (req, res) => {
     console.log('startig processing for request');
@@ -81,6 +85,27 @@ app.get('/', (req, res) => {
 );
 console.log('from index.mjs');
 logger.info('test from index.mjs');
+
+import passport from 'passport';
+import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
+
+app.use(passport.initialize());
+app.use(bodyParser.raw());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(cookieParser());
+
+app.post('/login/',loginRouteHanlder);
+
+app.all('/login2',cors({origin:'http://localhost:3000','credentials':true}),(req,res,next) => {
+    console.log('cookie',req.cookies);
+    console.log('login2',req.body, req.query,req.params);
+    res.cookie('test','test');
+    res.json({test:'test'});
+    res.end();
+});
+
 
 app.get('/fetch_paths', (req, res) => {
     console.log('fetching paths');

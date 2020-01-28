@@ -56,6 +56,10 @@ const config = {
                 if (stdout) process.stdout.write(stdout);
                 if (stderr) process.stderr.write(stderr);
               });
+              exec('title SERVER',(err, stdout, stderr) => {
+                if (stdout) process.stdout.write(stdout);
+                if (stderr) process.stderr.write(stderr);
+              });
               
             });
           }

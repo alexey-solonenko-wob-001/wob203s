@@ -62,7 +62,9 @@ let routes = {
                 order: 10,
                 intl: 'Курсы'
             },
-            testimonials: testimonials,
+            testimonials: {
+                selfNav: testimonials,
+            },
             all: {
                 path: '/courses',
                 name: 'all',
