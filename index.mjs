@@ -2,7 +2,7 @@ import path from 'path';
 import http from 'http';
 import cors from 'cors';
 import filename from './src/filename.cjs';
-import { logger } from './dev/logger_w.mjs';
+import { logger } from './dev/logger_w.js';
 import test_ecma_module from './src/test_ecma_module.js';
 import express from 'express';
 import { paths } from './src/mocks/paths/paths.js';
@@ -10,81 +10,25 @@ import { routes } from './src/mocks/routes/routes.js';
 import viewParams from './src/mocks/viewParams/viewParams.js';
 
 import { loginRouteHanlder } from './src/routeHandlers/login.js';
+
+/* Study Middleware Routers */
+import { studyGeneratorRouter } from './src/middleware-study/generators/study-generator.js';
+import { usersMiniApp } from './src/middleware-express-routers/users-mini-app/users-mini-app.js';
+
+
 const app = express();
 const port = process.env.port || 3001;
-/** TODO to delete and clean-up testing part  */
-//port =  3001;
-app.get('/for', (req, res) => {
-    console.log('startig processing for request');
-    const genFactory = function* () {
-        for (let i = 0; i < 10e7; i++) {
-            if (i % 1000000 === 0) console.log('processing for: ' + i);
-            yield i;
-        }
-    }
-    const gen = genFactory();
-    const forHandler = function () {
-        let i = gen.next().value;
-        if (i > (10e6 - 2)) {
-            res.send('Long processing of for completed ');
-            return;
-        } else {
-            setImmediate(forHandler);
-        }
-    }
-    forHandler();
 
-}
-);
-
-
-const asyncToHandler = async () => {
-
-
-    const forHandler = () => new Promise((resolve, reject) => {
-        const genFactory = function* () {
-            for (let i = 0; i < 10e7; i++) {
-                if (i % 100000 === 0) console.log('processing  to: ' + i);
-                yield i;
-            }
-        }
-
-        const gen = genFactory();
-        const promiseHandler = () => {
-            let i = gen.next().value;
-            if (i > (10e5 - 2)) {
-                console.log('processing completed');
-                resolve();
-            } else {
-                setImmediate(promiseHandler);
-            }
-        };
-        promiseHandler();
-    });
-    // await forHandler();
-    // await forHandler();
-    // await forHandler();
-    await Promise.all(Array(3).fill({}).map(forHandler));
-};
-
-app.get('/to', async (req, res) => {
-    console.log('startig processing to request');
-    console.log(asyncToHandler);
-    await asyncToHandler();
-    console.log('request processed');
-
-    res.send('Long processing of to completed ');
-
-}
-);
+app.use('/study/generators/',studyGeneratorRouter);
+app.use('/users/',usersMiniApp);
 
 app.get('/', (req, res) => {
 
-    res.send('Hello world from express 2');
+    res.send('Hello world from express 3');
 }
 );
 console.log('from index.mjs');
-logger.info('test from index.mjs');
+logger.info('test from index.mjs 2');
 
 import passport from 'passport';
 import bodyParser from 'body-parser';
@@ -98,7 +42,20 @@ app.use(cookieParser());
 
 app.post('/login/',loginRouteHanlder);
 
+let allowedOrigins = [
+    'http://localhost:3000',
+    'http://debug.tab4lioz.beget.tech/',
+];
+
+app.use((req,res,next) => {
+    let requestPath = req.protocol + '://' + req.hostname;
+    console.log(requestPath);
+    logger.info(requestPath);
+});
+
 app.all('/login2',cors({origin:'http://localhost:3000','credentials':true}),(req,res,next) => {
+    
+    console.log(req.hostname,req.originalUrl,req.path);
     console.log('cookie',req.cookies);
     console.log('login2',req.body, req.query,req.params);
     res.cookie('test','test');

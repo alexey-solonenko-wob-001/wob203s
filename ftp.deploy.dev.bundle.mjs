@@ -4,8 +4,19 @@ const require = createRequire(filename);
 const Client = require('ftp');
 import fs from 'fs';
 import util from 'util';
-import { logger } from './dev/logger_w.mjs';
 
+/* Logger in dev folder is setup for package-scope use only, 
+so we cannot reuse it here (we need to make it an *.mjs file */
+/* Thus, let's create a custom logger here */
+import winston from 'winston';
+const logger = winston.createLogger({
+    level: 'info',
+    format: winston.format.simple(),
+    defaultMeta: { service: 'user-servic', date: new Date() },
+    transports: [
+        new winston.transports.File({ filename: './tmp/wob203s.log' })
+    ]
+});
 const pReadFile = util.promisify(fs.readFile);
 
 
@@ -97,5 +108,6 @@ const openConnection = () => new Promise((resolve, reject) => {
 
 (async () => {
     await deployFilesSequentially(filePaths);
+    console.log('server app files deployed to the remote')
     process.exit(1);
 })();

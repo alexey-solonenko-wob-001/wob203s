@@ -195,3 +195,134 @@ info: test from index.mjs {"service":"user-servic"}
 info: test from index.mjs {"service":"user-servic"}
 info: test from index.mjs {"service":"user-servic"}
 info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: httplocalhost {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user logger {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user logger {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user logger {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user logger {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: http://localhost {"service":"user-servic"}
+info: in insert user logger {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user logger {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user logger 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user logger 2 {"service":"user-servic"}
+info: test from index.mjs 2 {"service":"user-servic"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T20:28:45.215Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T20:28:45.215Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T20:31:52.903Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T20:31:52.903Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T20:32:30.867Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T20:32:30.867Z"}
+info: [object Object] {"service":"default","date":"2020-02-05T20:32:30.867Z"}
+info: error connectingError: getaddrinfo ENOTFOUND https://tab4lioz.beget.tech/
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26) {"service":"default","date":"2020-02-05T20:32:30.867Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T20:36:33.262Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T20:36:33.262Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T20:40:08.823Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T20:40:08.823Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T20:40:17.465Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T20:40:17.465Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T20:41:20.804Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T20:41:20.804Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T20:58:09.482Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T20:58:09.482Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T21:01:12.026Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T21:01:12.026Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T21:01:34.256Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T21:01:34.256Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T21:01:54.297Z"}
+info: {} {"service":"default","date":"2020-02-05T21:01:54.297Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T21:01:54.297Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T21:02:24.512Z"}
+info: {} {"service":"default","date":"2020-02-05T21:02:24.512Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T21:02:24.512Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T21:05:13.566Z"}
+info: trying reading file {"service":"default","date":"2020-02-05T21:05:13.566Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T21:05:13.566Z"}
+info: {"type":"Buffer","data":[101,120,112,111,114,116,32,100,101,102,97,117,108,116,32,123,13,10,32,32,32,32,104,111,115,116,58,32,39,104,116,116,112,115,58,47,47,116,97,98,52,108,105,111,122,46,98,101,103,101,116,46,116,101,99,104,47,39,44,13,10,32,32,32,32,117,115,101,114,58,32,39,116,97,98,52,108,105,111,122,95,115,116,100,115,39,44,13,10,32,32,32,32,100,97,116,97,98,97,115,101,58,32,39,116,97,98,52,108,105,111,122,46,98,101,103,101,116,46,116,101,99,104,39,44,13,10,32,32,32,32,112,97,115,115,119,111,114,100,58,32,39,76,105,109,112,111,112,111,50,42,39,44,13,10,125,59]} {"service":"default","date":"2020-02-05T21:05:13.566Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T21:06:18.503Z"}
+info: trying reading file {"service":"default","date":"2020-02-05T21:06:18.503Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T21:06:18.503Z"}
+info: {"type":"Buffer","data":[123,13,10,32,32,32,32,34,104,111,115,116,34,58,32,34,104,116,116,112,115,58,47,47,116,97,98,52,108,105,111,122,46,98,101,103,101,116,46,116,101,99,104,47,34,44,13,10,32,32,32,32,34,117,115,101,114,34,58,32,34,116,97,98,52,108,105,111,122,95,115,116,100,115,34,44,13,10,32,32,32,32,34,100,97,116,97,98,97,115,101,34,58,32,34,116,97,98,52,108,105,111,122,46,98,101,103,101,116,46,116,101,99,104,34,44,13,10,32,32,32,32,34,112,97,115,115,119,111,114,100,34,58,32,34,76,105,109,112,111,112,111,50,42,34,13,10,125]} {"service":"default","date":"2020-02-05T21:06:18.503Z"}
+info: in insert user logger 2 {"service":"default","date":"2020-02-05T21:08:47.794Z"}
+info: trying reading file {"service":"default","date":"2020-02-05T21:08:47.794Z"}
+info: test from index.mjs 2 {"service":"default","date":"2020-02-05T21:08:47.794Z"}
+info: Error: ENOENT: no such file or directory, open 'C:\code\wob203s\build\secrets\mysql-connection.json' {"service":"default","date":"2020-02-05T21:08:47.794Z"}
