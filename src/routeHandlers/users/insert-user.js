@@ -1,42 +1,40 @@
-import { userTypes } from '../../consts/user-types.js';
-import connectionData from '../../../secrets/mysql-connection.js';
-import fs from 'fs';
-import merge from 'lodash.merge';
-import mysql from 'mysql2';
-import util from 'util';
-const pReadFile = util.promisify(fs.readFile);
-
+import crypto from 'crypto';
 import { logger } from '../../../dev/logger_w.js';
+import merge from 'lodash.merge';
+import { escape } from 'mysql2';
 
-logger.info('in insert user logger 2');
+import { getPromisePool } from '../../mysql/connection/get-promise-pool.js';
 
-(async () =>{
-    try{
-        logger.info('trying reading file');
-        const connectionConfJson = await pReadFile('./build/secrets/mysql-connection.json');
-        logger.info(JSON.stringify(connectionConfJson));
-    } catch(e){
-        logger.info(e.toString());
-    }
-})();
-
-const connData = merge({}, connectionData);
-console.log('in  insert user ');
 const insertUser = [
-    (req, res, next) => {
-        console.log('handling insert user request ');
-        console.log(connData);
-        logger.info(JSON.stringify(connData));
-        const connection = mysql.createConnection(connData);
-        connection.connect((err => {
-            if (err) {
-                console.log('error connecting' + err.stack);
-                logger.info('error connecting' + err.stack)
-                next(err);
-            }
-            console.log('connected as id' + connection.threadId);
+    async (req, res, next) => {
+        const pool = await getPromisePool();
+        const connection = await pool.getConnection();
+        /* To add username validation in a separate middleware? */
+        let params = merge({}, req.body, req.query);
+        if (!params.username) {
+            logger.info('username not found in req.body nor query', params);
             next();
-        }))
+        }
+        if (!params.password) {
+            logger.info('password not found in req.body nor query', params);
+            next();
+        }
+        let salt = crypto.randomBytes(32).toString('hex');
+        let hash = crypto.pbkdf2Sync(params.password, salt, 10000, 64, 'sha512').toString('hex');
+        let { username, userType } = {
+            username: escape(params.username),
+            userType: 5,
+        }
+        try {
+            const [ret] = await connection.execute(`INSERT INTO users (username, userType, hash, salt) VALUES(${username},${userType},'${hash}','${salt}')`);
+            if (ret.affectedRows < 1) {
+                next('Error adding new users');
+            }
+        } catch (err) {
+            logger.info('error connecting' + err.stack);
+            next(err);
+        }
+        next();
     },
 ];
 
